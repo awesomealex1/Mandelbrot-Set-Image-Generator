@@ -4,13 +4,13 @@ import numpy as np
 min_x,max_x = -2.2,2.2  #Need same absolute value
 min_y,max_y = -1.8,1.8  #Need same absolute value
 
-img_width = 300 #How many pixels wide
-img_height = 200 #How many pixels high
+img_width = 1800 #How many pixels wide
+img_height = 1500 #How many pixels high
 
 diverge_val = 2 #Absolute value needed for c to diverge
-n_loops = 30    #How many loops to go through until we say c doesn't diverge
-cf_r,cf_g,cf_b = 5,14,4 #color values diverging values should get (the later they diverge, the more color they get)
-cr,cg,cb = 100,230,90   #color values non-diverging values get
+n_loops = 70    #How many loops to go through until we say c doesn't diverge
+cf_r,cf_g,cf_b = 10,10,10 #color values diverging values should get (the later they diverge, the more color they get)
+cr,cg,cb = 10,190,45   #color values non-diverging values get
 
 #Sets up the pixel arrays and their complex values, then inserts corresponding color values using the bound method
 def generate_pixel_arr():
